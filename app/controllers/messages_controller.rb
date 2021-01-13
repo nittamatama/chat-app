@@ -10,8 +10,7 @@ class MessagesController < ApplicationController
     if @message.save
        redirect_to room_messages_path(@room)
     else
-      reder :index
-      
+      reder :index      
     end
   end
 
